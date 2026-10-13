@@ -248,6 +248,7 @@ cc_binary {
 
 rust_bindgen {
     name: "libselinux_bindgen",
+    recovery_available: true,
     wrapper_src: "rust/selinux.h",
     crate_name: "selinux_bindgen",
     visibility: [
